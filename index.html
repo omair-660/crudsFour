@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cruds</title>
+    <link rel="icon" type="image/jpg" href="favicon.jpg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/sweetalert2/11.11.0/sweetalert2.css"
+        integrity="sha512-n1PBkhxQLVIma0hnm731gu/40gByOeBjlm5Z/PgwNxhJnyW1wYG8v7gPJDT6jpk0cMHfL8vUGUVjz3t4gXyZYQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/master.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container">
+            <a class="navbar-brand" href="#">CrudsFour</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Features</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Pricing</a>
+                    </li>
+                    <li class="nav-item position-relative" id="card">
+                        <i class="fa-solid fa-cart-shopping mt-3 ps-md-4"></i>
+                        <p class="position-absolute top-0 rounded-circle text-white" id="count"></p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="position-absolute w-100 vh-100 z-2 bg-body-secondary top-0 d-nonee py-5" id="show">
+        <div class="d-flex justify-content-center align-items-center position-relative z-2 vh-100 w-100" id="notFound">
+            <img src="notFound.jpg" class="w-100 position-absoulte" alt="">
+        </div>
+
+        <h3 class="position-absolute end-0 top-0 h5 z-3 me-3 my-2" id="back"><i class="fa-solid fa-arrow-left pe-2"></i>
+            back</h3>
+<button id="deleteAll" class="btn btn-outline-danger mt-2 position-relative start-50 translate-middle-x"></button>
+        <div class="row container my-5 mx-auto" id="rowData">
+
+        </div>
+    </div>
+    <div class="container my-5">
+        <input oninput="validationName()" class="w-100 rounded-2 form-control" type="text" placeholder="Name"
+            id="inputName">
+        <br>
+        <br>
+        <input oninput="validationPrice()" class="w-100 rounded-2 form-control" type="number" placeholder="Price"
+            id="inputPrice">
+        <br>
+        <br>
+        <input oninput="validationCategory()" class="w-100 rounded-2 form-control" type="text" placeholder="Category"
+            id="inputCategory">
+        <br>
+        <br>
+        <div class="btn btn-primary" id="btnadd">add Product</div>
+    </div>
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert2/11.11.0/sweetalert2.all.min.js"
+        integrity="sha512-kLYXSIOMjgpawtmKqhehy5EtuwLm4mqvk+f5+151kp0PQu4VXj8yGkL6pJQLbXH60u+F+dM5yoEugNLPPNP1ig=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.min.js"
+        integrity="sha512-ykZ1QQr0Jy/4ZkvKuqWn4iF3lqPZyij9iRv6sGqLRdTPkY69YX6+7wvVGmsdBbiIfN/8OdsI7HABjvEok6ZopQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

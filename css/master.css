@@ -1,0 +1,38 @@
+#count {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+}
+@media (max-width:767px) {
+   #count{
+       right: -31px;
+   } 
+}
+#show{
+    overflow: auto;
+    transition: 0.5s;
+}
+#show.found{
+    overflow: hidden;
+}
+[type=button]:not(:disabled){ 
+    background: var(--bs-primary);
+}
+.d-nonee {
+    transform: translateX(-100%);
+    opacity: 0;
+}
+.d-noneeOpen{
+    opacity: 1;
+    transform: translateX(0);
+}
+#back,#card{
+    cursor: pointer;
+    width: fit-content;
+}
+nav [type=button]:not(:disabled) {
+    background:transparent;
+}
